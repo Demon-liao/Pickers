@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ukX-h3-aXI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ukX-h3-aXI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--Date Picker View Controller - Date-->
+        <!--Date-->
         <scene sceneID="7nS-KU-otK">
             <objects>
                 <viewController storyboardIdentifier="BIDDatePickerViewController" id="zDv-go-JO1" customClass="BIDDatePickerViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,10 +28,10 @@
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OjC-bl-ffp">
                                 <rect key="frame" x="0.0" y="45" width="320" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="425812724.59356999">
-                                    <!--<__NSDate Class=2014-06-30 09:18:44 +0000 timeInterval=425812724.59357 ISO8601=2014-06-30T17:18:44.594+0800>-->
+                                    <!--2014-06-30 09:18:44 +0000-->
                                 </date>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="6311300400">
-                                    <!--<__NSTaggedDate Class=2200-12-31 11:00:00 +0000 timeInterval=6311300400 ISO8601=2200-12-31T19:00:00.000+0800>-->
+                                    <!--2200-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>
@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="572" y="67"/>
         </scene>
-        <!--Single Component Picker View Controller - Single-->
+        <!--Single-->
         <scene sceneID="hrr-bf-BeR">
             <objects>
                 <viewController storyboardIdentifier="BIDSingleComponentPickerViewController" id="Nf6-cQ-MOD" customClass="BIDSingleComponentPickerViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="911" y="67"/>
         </scene>
-        <!--Dependent Component Picker View Controller - Dependent-->
+        <!--Dependent-->
         <scene sceneID="hYU-t3-O7D">
             <objects>
                 <viewController storyboardIdentifier="BIDDependentComponentPickerViewController" id="pWH-vh-G2x" customClass="BIDDependentComponentPickerViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="572" y="685"/>
         </scene>
-        <!--Custom Picker Component Picker View Controller - Custom-->
+        <!--Custom-->
         <scene sceneID="I7i-KP-dCS">
             <objects>
                 <viewController storyboardIdentifier="BIDCustomPickerComponentPickerViewController" id="xSU-f8-dm7" customClass="BIDCustomPickerComponentPickerViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
@@ -210,7 +210,7 @@
             </objects>
             <point key="canvasLocation" x="221" y="62"/>
         </scene>
-        <!--Double Component Picker View Controller - Double-->
+        <!--Double-->
         <scene sceneID="bng-j1-dhz">
             <objects>
                 <viewController storyboardIdentifier="BIDDoubleComponentPickerViewController" id="yVj-Rf-FNV" customClass="BIDDoubleComponentPickerViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
@@ -261,6 +261,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

@@ -28,7 +28,7 @@ class BIDDependentComponentPickerViewController: UIViewController {
         var plistURL:NSURL=bundle.URLForResource("statedictionary", withExtension: "plist") //载入plist数据
         self.stateZips=NSDictionary(contentsOfURL:plistURL)
         var allStates=self.stateZips.allKeys as Array<String> //转换确定数组内容的类型值，否则不能sort
-        var sortedStates=sort(allStates, backwards) //按照字母排序
+        var sortedStates=sorted(allStates, backwards) //按照字母排序
         self.states=sortedStates
         var selectedState:NSString=self.states[0] as NSString //初始化赋值
         println(self.stateZips)
