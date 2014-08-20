@@ -19,13 +19,13 @@ class BIDDependentComponentPickerViewController: UIViewController {
     var stateZips=[:]
     var states=[]
     var zips=[]
-    @IBOutlet var dependentPicker: UIPickerView
+    @IBOutlet var dependentPicker: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //加载plist文件
         var bundle:NSBundle=NSBundle.mainBundle()//获取项目的资源包
-        var plistURL:NSURL=bundle.URLForResource("statedictionary", withExtension: "plist") //载入plist数据
+        var plistURL:NSURL=bundle.URLForResource("statedictionary", withExtension: "plist")! //载入plist数据
         self.stateZips=NSDictionary(contentsOfURL:plistURL)
         var allStates=self.stateZips.allKeys as Array<String> //转换确定数组内容的类型值，否则不能sort
         var sortedStates=sorted(allStates, backwards) //按照字母排序

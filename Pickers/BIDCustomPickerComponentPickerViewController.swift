@@ -14,8 +14,8 @@ class BIDCustomPickerComponentPickerViewController: UIViewController {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 //        // Custom initialization
 //    }
-    @IBOutlet var picker: UIPickerView
-    @IBOutlet var winLabel: UILabel
+    @IBOutlet var picker: UIPickerView!
+    @IBOutlet var winLabel: UILabel!
     var images=[]
     override func viewDidLoad() {
         super.viewDidLoad()

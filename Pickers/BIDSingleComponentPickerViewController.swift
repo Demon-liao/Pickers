@@ -14,8 +14,8 @@ class BIDSingleComponentPickerViewController: UIViewController {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 //        // Custom initialization
 //    }
-    @IBOutlet var singlePicker: UIPickerView
-    @IBOutlet var loadMore: UIButton
+    @IBOutlet var singlePicker: UIPickerView!
+    @IBOutlet var loadMore: UIButton!
     var characterNames=[]
     override func viewDidLoad() {
         super.viewDidLoad()

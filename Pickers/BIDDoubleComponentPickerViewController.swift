@@ -16,7 +16,7 @@ class BIDDoubleComponentPickerViewController: UIViewController {
 //    }
     var kFillingComponent=0
     var kBreadComponent=1
-    @IBOutlet var doublePicker: UIPickerView
+    @IBOutlet var doublePicker: UIPickerView!
     var fillingTypes=[]
     var breadTypes=[]
     override func viewDidLoad() {

@@ -14,7 +14,7 @@ class BIDDatePickerViewController: UIViewController {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 //        // Custom initialization
 //    }
-    @IBOutlet var datePicker: UIDatePicker
+    @IBOutlet var datePicker: UIDatePicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
